@@ -20,12 +20,12 @@ public class SortBenchmarks
         _generatedFilePath = Path.Join(basePath, "generated.txt");
         _sortedFilePath = _generatedFilePath + "_sorted.txt";
 
-        int generatedFileSizeInMegabytes = 100;
+        int generatedFileSizeInMegabytes = 100 * 1024;
         await Generator.Program.GenerateFile(_generatedFilePath, generatedFileSizeInMegabytes);
     }
 
     [Benchmark]
-    public async Task Sort_100Mb_file()
+    public async Task Sort_100GB_file()
     {
         await TextFileSorter.Program.RunAsync(_generatedFilePath, _sortedFilePath, 0, CancellationToken.None);
     }
