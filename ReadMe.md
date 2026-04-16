@@ -1,30 +1,30 @@
 ## How to use:
 
-Generate file with **TextFileSorter.Generator** application, then sort file with **TextFileSorter** application.
+Build all applications and generate text file with **TextFileSorter.Generator** application, then sort text file with **TextFileSorter** application.
 
 
-## Generator parameters:
+## TextFileSorter.Generator parameters:
 
-\-o Path to output file
+**-o** Path to output file
 
-\-s Size for output file, in megabytes
+**-s** Size for output file, in megabytes
 
-Example:
+### Example:
 ```
-TextFileSorter.Generator.exe -o c:\\Test\\text.txt -s 123
+TextFileSorter.Generator.exe -o text.txt -s 123
 ```
 
 
-## Main application parameters:
+## TextFileSorter parameters:
 
-\-i Path to input file
+**-i** Path to input file
 
-\-o Path to output sorted file, if omitted the input file will be overwritten
+**-o** Path to output sorted file, if omitted the input file will be overwritten
 
-\-m Maximum chunk size in megabytes, if omitted it will be chosen automatically
+**-m** Maximum chunk size in megabytes, if omitted it will be chosen automatically
 
 
-Example:
+### Example:
 ```
-TextFileSorter.exe -i c:\\Test\\text.txt -o c:\\Test\\text\_sorted.txt -m 50
+TextFileSorter.exe -i text.txt -o text_sorted.txt -m 50
 ```
