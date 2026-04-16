@@ -50,6 +50,7 @@ internal class Program
 
         int reservedMemoryInMegabytes = CalculateReservedMemoryInMegabytes(maxChunkSizeInBytes);
 
+        Console.WriteLine("---");
         Console.WriteLine($"Input file = {inputFilePath}");
         Console.WriteLine($"Output file = {outputFilePath}");
         Console.WriteLine($"Input file size = {inputFileSizeInBytes.Bytes().Humanize()}");

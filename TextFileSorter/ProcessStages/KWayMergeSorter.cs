@@ -22,7 +22,7 @@ internal class KWayMergeSorter : IChunkMergeSorter
 
     public async Task MergeAsync(CancellationToken cancellationToken)
     {
-        Console.WriteLine("Begin merge sort");
+        Console.WriteLine("Merge sort begin");
 
         string[] chunkPaths = Directory.GetFiles(_chunkDirectoryPath, _chunkSearchPattern);
         PriorityQueue<FileReader, TextLine> priorityQueue = new(new TextLineComparer());
@@ -72,6 +72,6 @@ internal class KWayMergeSorter : IChunkMergeSorter
             sortedFileWriter.Stream.SetLength(sortedFileWriter.Stream.Position);
         }
 
-        Console.WriteLine("End merge sort");
+        Console.WriteLine("Merge sort end");
     }
 }

@@ -37,13 +37,15 @@ internal class Program
             Environment.Exit(1);
         }
 
-        Console.WriteLine("Begin creating file");
+        Console.WriteLine("---");
         Console.WriteLine($"Path = {filePath}");
         Console.WriteLine($"Size = {fileSizeInMegabytes} MB");
+        Console.WriteLine("---");
+        Console.WriteLine("File creation begin");
 
         await GenerateFile(filePath, fileSizeInMegabytes);
 
-        Console.WriteLine("File is created");
+        Console.WriteLine("File creation end");
     }
 
     internal static async Task GenerateFile(string filePath, long sizeInMegabytes)
