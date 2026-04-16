@@ -4,9 +4,9 @@ namespace TextFileSorter.Generator;
 
 internal class CommandLineOptions
 {
-    [Option('p', "file-path", Required = true, HelpText = "Path to the generated file")]
+    [Option('o', "output", Required = true, HelpText = "Path to output file")]
     public string FilePath { get; set; }
 
-    [Option('s', "file-size", Required = true, HelpText = "File size in megabytes")]
+    [Option('s', "size", Required = true, HelpText = "Size for output file, in megabytes")]
     public int FileSizeInMegabytes { get; set; }
 }
