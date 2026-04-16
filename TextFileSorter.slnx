@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="TextFileSorter.Benchmarks/TextFileSorter.Benchmarks.csproj" Id="61174442-5d98-418d-8294-7f9832057845" />
+  <Project Path="TextFileSorter.DecisionBenchmarks/TextFileSorter.DecisionBenchmarks.csproj" Id="32f4627e-20e6-4b57-88f6-282afb5ad748" />
+  <Project Path="TextFileSorter.Generator/TextFileSorter.Generator.csproj" Id="0cac4246-4ba3-454d-8e3c-2c8f2fdf048e" />
+  <Project Path="TextFileSorter.Tests/TextFileSorter.Tests.csproj" Id="5aef789b-596d-4bf1-9a68-4a37adf8227e" />
+  <Project Path="TextFileSorter/TextFileSorter.csproj" />
+</Solution>
